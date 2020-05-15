@@ -126,7 +126,7 @@ mcp = Adafruit_MCP3008.MCP3008(clk=CLK, cs=CS, miso=MISO, mosi=MOSI)
 
 # read data using pin 14
 instance = dht11.DHT11(pin=14)
-db = MySQLdb.connect(host="182.50.133.77", user="prabudh",passwd="Prabudh@123", db="prabudhbharat")
+db = MySQLdb.connect(host="", user="",passwd="", db="") #use your database connectivity here  
 cur = db.cursor()
 x= datetime.datetime.now()
 y1 = (x.strftime("%d"))
